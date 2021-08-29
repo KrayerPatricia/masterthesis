@@ -1,0 +1,565 @@
+PUTCLOSE con,"_V6_OutputFiles_SteeringFile2";
+
+$ontext;
+GENERAL DESCRIPTION
+
+*the following code produces the following gdx-files:
+
+'GeneralModelSets_MR'
+'GeneralModelParameters_Inputs_MR'
+'GeneralModelParameters_Outputs_MR'
+'GeneralModelParameters_OtherChar_MR'
+'GeneralModelParameters_Various_MR'
+'GeneralModelParameters_Auxiliary_MR'
+'GeneralModelVariables_ActivityQuantities_MR'
+'GeneralModelVariables_Inputs_MR'
+'GeneralModelVariables_Outputs_MR'
+'GeneralModelVariables_OtherChar_MR'
+'GeneralModelVariables_Various_MR'
+'GeneralModelVariables_Trade_MR'
+'GeneralModelVariables_CommodityTree_MR'
+'GeneralModelVariables_Auxiliary_MR'
+
+DETAILED TABLE OF CONTENTS
+- 1) Output files
+$offtext;
+
+
+
+*MODEL CODE:
+
+****************************************************************************************************************************************************************************************************
+****************************************************************************************************************************************************************************************************
+*1) Output files
+
+
+execute_unload 'GeneralModelSets_MR'
+InputsCropsGrass
+InputsAnimals
+InputsFishSeafood
+InputsForest
+InputsOther
+OutputsCropsGrass
+YieldsCropsGrass
+OutputsAnimals
+YieldsAnimals
+OutputsFishSeafood
+OutputsForest
+OutputsOther
+OtherCharCropsGrass
+OtherCharAnimals
+OtherCharFishSeafood
+OtherCharForest
+OtherCharOther
+AnimalTypeInHerd
+AnimalTypeInHerd_NoAggregates
+CattleTypeInHerd
+DairyCattleTypeInHerd
+BeefCattleTypeInHerd
+PigTypeInHerd
+ProducingAnimals
+SuckledAnimals
+AnimalTypeInHerd_2
+MatchSucklingSuckledAnimals
+
+ProductionSystems
+ProdSyst_OrgConAll
+ProdSyst_OrgCon
+ProdSyst_NoAggregates
+ProductionSystems_UsingMinNFert
+ProductionSystems_UsingMinPFert
+ProductionConditions
+Contents
+ContentsPerFreshMatterNutrients
+ContentsPerFreshMatterFood
+ContentsPerFreshMatterFeed
+CommodOtherChar
+ManureOtherChar
+CropResContents
+CropResOtherChar
+CropResManagement
+CropResManagement_NotSystemShares
+CropResManSystem
+CropResManSystemCropland
+CropResManSystemGrassland
+CropResManSystem_WithVolatInApplication
+CropResManSystemCropland_ForOECDNBalance
+ManureContents
+ManureManagement
+ManureManSystem
+ManureManSystemCropland
+ManureManSystemGrassland
+ManureManSystem_NoAverageNoTotal
+FertApplicCharact
+
+Regions
+Regions_2
+Countries
+
+FAO_Africa
+FAO_Eastern_Africa
+FAO_Middle_Africa
+FAO_Northern_Africa
+FAO_Southern_Africa
+FAO_Western_Africa
+FAO_Americas
+FAO_Northern_America
+FAO_Central_America
+FAO_Caribbean
+FAO_South_America
+FAO_Asia
+FAO_Central_Asia
+FAO_Eastern_Asia
+FAO_Southern_Asia
+FAO_SouthEastern_Asia
+FAO_Western_Asia
+FAO_Europe
+FAO_Eastern_Europe
+FAO_Northern_Europe
+FAO_Southern_Europe
+FAO_Western_Europe
+FAO_Oceania
+FAO_Australia_NewZealand
+FAO_Melanesia
+FAO_Micronesia
+FAO_Polynesia
+FAO_EuropeanUnion
+SubSaharanAfrica
+Match_GeographicAggregates_SingleCountries
+
+FOFA2050_Rest_of_EAP
+FOFA2050_Rest_of_HIC
+FOFA2050_Rest_of_LAC
+FOFA2050_Rest_of_MNA
+FOFA2050_Rest_of_SAS
+FOFA2050_Rest_of_SSA
+FOFA2050_Rest_of_EU
+FOFA2050_Rest_of_ECA
+Regions_Switzerland
+Regions_Austria
+Regions_Austria_Tal
+Regions_Austria_Huegel
+Regions_Austria_Berg
+
+NonEU_RestOfTheWorld
+
+Activities
+Activities_2
+Livestock
+Livestock_NoAggregates
+Ruminants
+Poultry
+MonogastricsNonPoultry
+FishAndSeafood
+NonRuminants
+Livestock_NoCoupledOutputs
+Livestock_CoupledMeatMilk
+Livestock_CoupledMeatEggs
+Livestock_NonRuminantsWithHerdStructure
+Crops
+Cereals
+Fruits
+Treenuts
+Pulses
+Legumes_NFixing
+Crops_NoNFixingLegumes
+OilCrops
+StarchyRoots
+SugarCrops
+Vegetables
+StimulantsSpices
+FibresRubber
+Fallows
+EnergyCrops
+OtherCereals
+CitrusFruits
+Spices
+OtherVegetables
+OtherOilcrops
+FibresNotCotton
+ForageCrops
+OtherFodderCrops
+CoreFoodCrops
+CoreFoodCrops_NoCereals
+GrassActivities
+CoreGrassActivities
+CoreGrassActivitiesNoTEMPGrass
+TempAndPermMeadAndPastures
+TempMeadAndPastures
+CropsAndCoreGrassActivities
+CropsAndTempGrassActivities
+SingleCropGrassAndLivestockActivities
+FOFA2050_SweetPotato_And_Yams
+FOFA2050_Rapeseed_And_Mustardseed
+FOFA2050_OtherCrops
+FOFA2050_OtherFibreCrops
+FOFA2050_OtherFruits
+FOFA2050_OtherOilseeds
+FOFA2050_OtherRootsAndTubers
+FOFA2050_OtherVegetables
+FOFA2050_CitrusFruits
+FOFA2050_DriedPulses
+FOFA2050_OtherCereals
+OtherCrops
+
+Commodities
+Commodities_2
+ForageCommodities
+Grasscommodities
+ConcentrateCommodities
+Commodities_SingleCommodities
+Commodities_FeedGroups
+Commodities_FeedGroups_DetailedFeedingRations
+Commodities_FeedGroups_DetailedFeedingRations_NoTot
+Commodities_Feed
+Commodities_Feed_Grass
+Commodities_Feed_ForageCrops
+Commodities_Feed_Cereals
+Commodities_Feed_OilCropsAndCakes
+Commodities_Feed_Pulses
+Commodities_Feed_Roots
+Commodities_Feed_Sugar
+Commodities_Feed_OthersPlants
+Commodities_Feed_OthersAnimals
+Commodities_Feed_Residues
+CommoditiesDAQ_TradeFromToWorld
+CommoditiesDAQ_TradeFromToWorldPrimary
+CommoditiesDAQ_TradeFromToWorldPrimaryCrops
+COmmodities_EquivalentToNonGrassFedAnimalActivityOutput
+CommoditiesDAQ_TradeFromToWorldPrimaryAnimals
+CommoditiesDAQ_TradeFromToWorldPrimaryAnimals_GrassFed
+CommoditiesDAQ_TradeFromToWorldPrimaryAnimals_NonGrassFed
+CommoditiesDAQ_TradeFromToWorldPrimaryAnimals_FishSeafood
+CommoditiesDAQ_TradeFromToWorldDirectlyDerivedFromPrimary
+CommoditiesDAQ_TradeFTWorldDirDerivedFromPrimary_Animals
+CommoditiesDAQ_TradeFTWDirDerFromPrim_Animals_GrassFed
+CommoditiesDAQ_TradeFTWDirDerFromPrim_Anim_NonGrassFed
+CommoditiesDAQ_TradeFromToWorldCropCommodAndProducts
+CommoditiesDAQ_TradeFromToWorld_FishSeafood
+MatchCommAct_CommoditiesDAQ_TradeFromToWorld_CropsPrimary
+MatchCommAct_CommoditiesDAQ_TradeFromToWorld_CropsDerived
+MatchPrimDerivedCommodities_DAQ_TradeFromToWorld_CropsDerived
+MatchPrimDerivedCommodities_DAQ_TradeFromToWorld_AnimalsDerived
+MatchPrimDerivedCommodities_DAQ_TradeFTW_AnimalsDer_GrassFed
+MatchCommAct_CommodDAQ_TradeFTWorld_CropCommodAndProducts
+MatchCommAct_CommoditiesDAQ_TradeFromToWorld_AnimalsPrimary
+MatchCommAct_CommoditiesDAQ_TradeFTW_AnimalsPrimaryGrassFed
+MatchCommAct_CommoditiesDAQ_TradeFTW_AnimPrimaryNonGrassFed
+MatchCommAct_CommoditiesDAQ_TradeFromToWorld_AnimalsDerived
+MatchCommodTradeFromToWorld_CommodTradeBetweenCountries
+
+*the following sets are also needed to read in data
+Years
+BasisyearsOLD
+Basisyears
+BasisyearsSeed
+Temperatures
+Temperatures0to100Celsius
+TemperaturesBelow10
+TemperaturesAbove28
+GreenhouseGases
+
+MineralFertilizerType
+MineralFertilizerProdTech
+MinFertChar
+PopulationGroups
+Humans_InputsOutputsOtherCharacteristics
+FeedingRationOtherChar
+*this file is not needed here and cannot be defined or loaded, due to the FAOSTAT-Set used in its definition, thus drop
+*MatchFaostatLiveAnimalItems_Activities
+Match_ActivityOutputsToCommodities_Crops
+Match_ActivityOutputsToCommodities_Animals
+Match_FeedCommoditiesToFeedCommodGroups
+Match_FeedCommoditiesToFeedCommodGroups_MainByprodConc
+Match_FeedCommodToFeedCommodGroups_DetailedFeedRatio
+
+ConversionLevel
+EnergyType
+EnergySource
+EnergyChar
+
+Scenarios
+FOFA2050_Scenarios
+BioeSR15_Scenarios
+
+MatchCommAct_AggregateCommodities_Crops
+MatchCommAct_AggregateActivities_Crops
+MatchCommAct_WellDefinedCoProducts_Crops
+MatchCommAct_ComplexCases_Crops
+MatchCommAct_ComplexAnimalCommodities
+MatchCommAct_CommodEquivalentAct_Crops
+MatchCommAct_CommodEquivalentAct_Animals
+MatchCommAct_CommodAndProductsEquivalentAct_Crops
+
+SubsetCommod_MatchWithAct_AggregateCommodities
+SubsetCommod_MatchWithAct_AggregateActivities
+SubsetCommod_MatchWithAct_WellDefinedCoProducts
+SubsetCommod_MatchWithAct_ComplexCases
+SubsetCommod_MatchWithAct_ComplexAnimalCommodities
+SubsetCommod_MatchWithAct_CommodEquivalentAct
+SubsetCommod_MatchWithAct_CommodAndProductsEquivalentAct
+
+SubsetCommod_MatchWithAct_WellDefinedCoProducts_Level1_Main
+SubsetCommod_MatchWithAct_WellDefinedCoProducts_Level1_Co
+SubsetCommod_MatchWithAct_WellDefinedCoProducts_Level2_Main
+SubsetCommod_MatchWithAct_WellDefinedCoProducts_Level2_Co
+MatchMainWithCoProd_WellDefinedCoProducts_Level1
+MatchMainWithCoProd_WellDefinedCoProducts_Level2
+MatchMainWithCoPr_WellDefCoProd_Level1And2_TwoByprod
+Match_ShellsEtc_Activities
+
+Activities_MR
+Crops_MR
+CoreGrassActivities_MR
+CropsAndCoreGrassActivities_MR
+CropsAndTempGrassActivities_MR
+CoreGrassActivitiesNoTEMPGrass_MR
+Regions_MR
+Commodities_MR
+ConcentrateCommodities_MR
+ForageCommodities_MR
+GrassCommodities_MR
+Livestock_MR
+AnimalTypeInHerd_MR
+;
+
+execute_unload 'GeneralModelParameters_Inputs_MR'
+*1.1) Activities: input param
+ActCropsGrass_Inputs_MR
+ActAnimalsAPU_Inputs_MR
+ActAnimalsHead_Inputs_MR
+ActFishSeafood_Inputs_MR
+ActForest_Inputs_MR
+ActOthers_Inputs_MR
+;
+
+execute_unload 'GeneralModelParameters_Outputs_MR'
+*1.2) Activities: output para
+ActCropsGrass_Outputs_MR
+ActAnimalsAPU_Outputs_MR
+ActAnimalsHead_Outputs_MR
+ActFishSeafood_Outputs_MR
+ActForest_Outputs_MR
+ActOthers_Outputs_MR
+;
+
+execute_unload 'GeneralModelParameters_OtherChar_MR'
+*1.3) Activities: other chara
+ActCropsGrass_OtherChar_MR
+ActAnimalsAPU_OtherChar_MR
+ActAnimalsHead_OtherChar_MR
+ActFishSeafood_OtherChar_MR
+ActForest_OtherChar_MR
+ActOthers_OtherChar_MR
+;
+
+execute_unload 'GeneralModelParameters_Various_MR'
+*1.4) Commodities: nutrient contents
+Commod_Contents_MR
+Commod_OtherChar_MR
+
+*1.5) Commodity tree paramete
+Commod_ProductionShare_MR
+Commod_ExtractionRate_MR
+Commod_SingleInAggregateCommodShares_MR
+
+*1.6) Crop residues: nutrient
+CropResidues_Contents_MR
+CropResidues_OtherChar_MR
+CropResidues_Management_MR
+
+*1.7) Feeding rations
+FeedingRations_Contents_MR
+FeedingRations_OtherChar_MR
+FeedingRationsHeads_Contents_MR
+FeedingRationsHeads_OtherChar_MR
+FeedingRationsAPU_Contents_MR
+
+*1.8) Manure: nutrient conten
+Manure_Contents_MR
+Manure_OtherChar_MR
+Manure_Management_MR
+
+*1.9) Fertilizer application:
+ManureApplication_MR
+CropResAndBiomassApplication_MR
+MinFertApplication_MR
+
+*extraction rates:
+ExtractionRate_CommodityTree_MR
+
+*trade scale factors:
+ImportScaleFactor_MR
+ExportScaleFactor_MR
+;
+
+
+execute_unload 'GeneralModelParameters_Auxiliary_MR'
+HumanCharacteristics_MR
+SeedContents_MR
+MineralFertilizerCharacteristics_MR
+GWP_GTP_SOLm_MR
+;
+
+execute_unload 'GeneralModelVariables_ActivityQuantities_MR'
+*2.1) Amount of activity units
+VActCropsGrass_QuantityActUnits_MR
+VActAnimalsAPU_QuantityActUnits_MR
+VActAnimalsHead_QuantityActUnits_MR
+VActFishSeafood_QuantityActUnits_MR
+VActForest_QuantityActUnits_MR
+VActOthers_QuantityActUnits_MR
+;
+
+
+execute_unload 'GeneralModelVariables_Inputs_MR'
+*2.2) Inputs to activities
+VActCropsGrass_Inputs_MR
+VActAnimalsAPU_Inputs_MR
+VActAnimalsHead_Inputs_MR
+VActFishSeafood_Inputs_MR
+VActForest_Inputs_MR
+VActOthers_Inputs_MR
+;
+
+
+execute_unload 'GeneralModelVariables_Outputs_MR'
+*2.3) Outputs from activities
+VActCropsGrass_Outputs_MR
+VActAnimalsAPU_Outputs_MR
+VActAnimalsHead_Outputs_MR
+VActFishSeafood_Outputs_MR
+VActForest_Outputs_MR
+VActOthers_Outputs_MR
+;
+
+
+execute_unload 'GeneralModelVariables_OtherChar_MR'
+*2.4) Other characteristics of a
+VActCropsGrass_OtherChar_MR
+VActAnimalsAPU_OtherChar_MR
+VActAnimalsHead_OtherChar_MR
+VActFishSeafood_OtherChar_MR
+VActForest_OtherChar_MR
+VActOthers_OtherChar_MR
+;
+
+
+execute_unload 'GeneralModelVariables_Various_MR'
+*2.5) Commodity quantities, nutr
+VCommod_Quantity_MR
+VCommod_Contents_MR
+VCommod_OtherChar_MR
+
+*2.6) Commodity untilizationa
+VCommod_Production_MR
+VCommod_StockChanges_MR
+VCommod_Food_MR
+VCommod_Feed_MR
+VCommod_Seed_MR
+VCommod_Processing_MR
+VCommod_Waste_MR
+VCommod_Other_MR
+
+VCommod_Food_Contents_MR
+VCommod_Feed_Contents_MR
+VCommod_Waste_Contents_MR
+VCommod_Food_OtherChar_MR
+VCommod_Feed_OtherChar_MR
+VCommod_Waste_OtherChar_MR
+
+*2.7) Crop residue quantities, n
+VCropResidues_Quantity_MR
+VCropResidues_Contents_MR
+VCropResidues_OtherChar_MR
+VCropResidues_Management_MR
+
+*2.8) Feeding rations quantities
+VFeedingRations_Quantity_MR
+VFeedingRations_Contents_MR
+VFeedingRations_OtherChar_MR
+
+*2.9) Manure quantities, nutrien
+VManure_Quantity_MR
+VManure_Contents_MR
+VManure_OtherChar_MR
+VManure_Management_MR
+
+*2.10) Fertilizer application: n
+VManureApplication_MR
+VCropResAndBiomassApplication_MR
+VMinFertApplication_MR
+;
+
+
+execute_unload 'GeneralModelVariables_Trade_MR'
+*2.11) Import and export quantit
+VImportQuantity_MR
+VExportQuantity_MR
+VImportLivingAnimalsHead_MR
+VExportLivingAnimalsHead_MR
+*for trade in beehives and other
+VImportLivingAnimalsAPU_MR
+VExportLivingAnimalsAPU_MR
+
+VImportQuantity_Feed_MR
+VExportQuantity_Feed_MR
+;
+
+
+*2.12) Commodities expressed in primary product equivalents
+execute_unload 'GeneralModelVariables_CommodityTree_MR'
+VPrimProd_Commod_Quantity_MR
+VPrimProd_Commod_Production_MR
+VPrimProd_Commod_StockChanges_MR
+VPrimProd_Commod_Food_MR
+VPrimProd_Commod_Feed_MR
+VPrimProd_Commod_Seed_MR
+VPrimProd_Commod_Processing_MR
+VPrimProd_Commod_Waste_MR
+VPrimProd_Commod_Other_MR
+VPrimProd_ImportQuantity_MR
+VPrimProd_ExportQuantity_MR
+VPrimProd_Commod_Quantity_CropActivities_MR
+VPrimProd_Commod_Quantity_AnimalActivities_MR
+;
+
+
+execute_unload 'GeneralModelVariables_Auxiliary_MR'
+VMineralFertilizerQuantity_MR
+VPopulationNumbers_MR
+VEnergyProduction_MR
+VHumanCharacteristics_MR
+;
+
+
+$if %CalculateFootprints% == "NO" $goto EndOf_FileWithFootprints
+execute_unload 'GeneralModelParameters_Footprints_MR'
+PerAnimalCommodFeedInput_WithAllocChar_MR
+PerCropCommodImpact_WithAllocChar_MR
+PerAnimalCommodImpact_WithAllocChar_MR
+PerCropCommodImpact_WithAllocChar_DifferentRefUnits_MR
+PerAnimalCommodImpact_WithAllocChar_DifferentRefUnits_MR
+PerAnimalCommodFeedInput_WithAllocChar_DifferentRefUnits_MR
+;
+
+
+$ontext;
+*for a specific data requirement for the UBA-project in February 2021, define some reduced size parameters:
+execute_unload 'GeneralModelParameters_Footprints_Reduced_MR'
+PerCropCommodImpact_MassAlloc_PerMass_MR
+PerAnimalCommodImpact_MassAlloc_PerMass_MR
+PerAnimalCommodFeedInput_MassAlloc_PerMass_MR
+;
+*and produce 3 excel-files for the respective project team:
+execute 'gdxxrw.exe GeneralModelParameters_Footprints_Reduced_MR.gdx o=GeneralModelParameters_Footprints_Reduced_MR_PerCropCommodImpact.xlsx par=PerCropCommodImpact_MassAlloc_PerMass_MR rng=PerCropCommodImpact!a1'
+execute 'gdxxrw.exe GeneralModelParameters_Footprints_Reduced_MR.gdx o=GeneralModelParameters_Footprints_Reduced_MR_PerAnimalCommodImpact.xlsx par=PerAnimalCommodImpact_MassAlloc_PerMass_MR rng=PerAnimalCommodImpact!a1'
+execute 'gdxxrw.exe GeneralModelParameters_Footprints_Reduced_MR.gdx o=GeneralModelParameters_Footprints_Reduced_MR_PerAnimalCommodFeed.xlsx par=PerAnimalCommodFeedInput_MassAlloc_PerMass_MR rng=PerAnimalCommodFeed!a1'
+*this data is generated in the file DerivePerCommodityImpacts.gms
+*the execute-statemnets can also be run after specifying sets and parameters in SteeringFile2 - then they are generated fastly.
+$offtext;
+
+
+$label EndOf_FileWithFootprints
+
+
