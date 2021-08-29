@@ -5,4 +5,5 @@ Data files are available on request (patricia.krayer@gmail.com).
 
 
 Author: Patricia Krayer
+
 Supervisors: Matthias Nyfeler (IAS, ZHAW), Adrian Müller (FiBL)
